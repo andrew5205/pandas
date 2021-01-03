@@ -38,7 +38,7 @@ df['Total'] = df.iloc[:, 4:10].sum(axis=1)
 print(df.iloc[:4])
 
 df.to_csv('modified_index_free.csv', index= False)
-# df.to_csv('modified_index_free.xlsx', index= False)
+df.to_excel('modified_index_free.xlsx', index= False)
 df.to_csv('modified_index_free.txt', index= False, sep='\t')
 
 
